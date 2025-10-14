@@ -105,24 +105,27 @@ VALUES
 (1, 1),
 (2, 2);
 
-UPDATE Livros
-SET preco = 54.90
+SELECT * FROM autores;
+SELECT * FROM clientes;
+SELECT * FROM editoras;
+SELECT * FROM escrever;
+SELECT * FROM livros;
+SELECT * FROM publicam;
+SELECT * FROM vendas;
+
+alter table livros add column ano_publicacao date;
+
+UPDATE livros
+SET ano_publicacao = '2001-01-01'
 WHERE id_livro = 1;
 
-UPDATE Clientes
-SET telefone_cliente = '11999998888'
-WHERE id_cliente = 1;
+UPDATE livros
+SET ano_publicacao = '2025-12-09'
+WHERE id_livro = 2;
 
-UPDATE Livros
-SET quantidade = quantidade - 1
-WHERE id_livro = 1;
+Select titulo as nome from livros;
 
-ALTER TABLE Editoras
-MODIFY telefone_editora VARCHAR(15);
+select count(*) as total from livros;
 
-ALTER TABLE Livros
-MODIFY preco DECIMAL(8,2);
 
-ALTER TABLE Clientes
-ADD COLUMN endereco_cliente VARCHAR(150);
 
