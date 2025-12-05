@@ -1,0 +1,25 @@
+body,html{
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #474747, #b9b9b9 ) ;
+    flex-direction: column;
+    gap: 5%;
+}
+
+a{
+    padding: 2%;
+    background-color: rgba(243, 255, 134, 0.568);
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: x-large;
+    color: #424242;
+    width: 17%;
+    text-align: center;
+}
